@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #87CEFA, #9370DB, #FF69B4);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin: 100px auto 20px auto;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            color: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .create-account-btn {
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none; /* Removes the underline from the link */
+            display: block; /* Makes the link fill the button space */
+            line-height: 1; /* Aligns the text vertically */
+            padding: 10px; /* Gives the button some padding */
+            border-radius: 5px; /* Adds rounded corners */
+            margin-top: 10px;
+        }
+
+        .forgot-password-link {
+            text-align: center;
+        }
+
+        .forgot-password-link a {
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+
+        .forgot-password-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="post">
+        <h2>LOGIN</h2>
+        <label for="usn">USN:</label>
+        <input type="text" id="usn" name="USN" placeholder="Enter your USN" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="Password" placeholder="Enter your password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="ConfirmPassword" placeholder="Confirm your password" required>
+
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="Mobile" placeholder="Enter your mobile number" required>
+
+        <button type="submit">Login</button>
+        <a href="create-account.html" class="create-account-btn">Create account</a>
+    </form>
+    <p class="forgot-password-link">
+        <a href="forgot-password.html">Forgot Password?</a>
+    </p>
+</body>
+</html>
